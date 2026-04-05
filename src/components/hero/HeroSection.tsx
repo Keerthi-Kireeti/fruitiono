@@ -12,10 +12,8 @@ export default function HeroSection({
   headline,
   subtitle = 'Handcrafted kulfi & fresh fruit creations made to order. Customize your treat, order for today, or prebook for your next celebration.',
   orderHref = '/order',
-  prebookHref = '/prebook',
   menuHref = '/menu',
   orderLabel = 'Order Now',
-  prebookLabel = 'Prebook',
   menuLabel = 'Explore Menu',
 }: HeroSectionProps) {
 
@@ -64,16 +62,6 @@ export default function HeroSection({
               >
                 {orderLabel}
                 <span className="hero__cta-icon" aria-hidden="true">→</span>
-              </motion.a>
-
-              <motion.a
-                href={prebookHref}
-                className="hero__cta hero__cta--secondary"
-                id="hero-cta-prebook"
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-              >
-                {prebookLabel}
               </motion.a>
 
               <motion.a

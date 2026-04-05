@@ -42,11 +42,9 @@ export interface HeroSectionProps {
   subtitle?: string;
   /** CTA hrefs */
   orderHref?: string;
-  prebookHref?: string;
   menuHref?: string;
   /** CTA labels */
   orderLabel?: string;
-  prebookLabel?: string;
   menuLabel?: string;
 }
 

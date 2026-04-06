@@ -85,7 +85,7 @@ export default function OrderConfirmedPage() {
     if (!phone.trim()) errs.phone = 'Please enter your phone number';
     else if (!/^\d{10}$/.test(phone.replace(/\s/g, '')))
       errs.phone = 'Enter a valid 10-digit number';
-    if (!transactionId.trim()) errs.transactionId = 'Please enter the UPI transaction ID';
+
     if (!screenshotFile) errs.screenshot = 'Please upload a payment screenshot';
     setErrors(errs);
     return Object.keys(errs).length === 0;
@@ -312,7 +312,7 @@ export default function OrderConfirmedPage() {
 
                 {/* Transaction ID */}
                 <div className="confirmation__field">
-                  <label className="confirmation__label" htmlFor="txn-id">UPI Transaction ID</label>
+                  <label className="confirmation__label" htmlFor="txn-id">UPI Transaction ID <span className="confirmation__label-optional">(Optional)</span></label>
                   <input
                     id="txn-id"
                     type="text"

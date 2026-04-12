@@ -35,10 +35,9 @@ export default function ProductCard({ product, index }: ProductCardProps) {
         <Image
           src={product.image}
           alt={product.name}
-          width={280}
-          height={280}
+          width={600}
+          height={600}
           className="product-card__image"
-          style={{ objectFit: 'cover' }}
         />
         <div className="product-card__image-glow" />
       </div>

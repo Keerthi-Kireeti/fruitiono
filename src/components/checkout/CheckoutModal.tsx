@@ -245,15 +245,15 @@ export default function CheckoutModal() {
                   <div className="checkout-payment-info">
                     <div className="checkout-payment-info__step">
                       <span className="checkout-payment-info__num">1</span>
-                      <span>Click &quot;Pay Now&quot; — a Google Form will open in a new tab</span>
+                      <span>Click &quot;Pay Now&quot; — you&apos;ll see a UPI QR code</span>
                     </div>
                     <div className="checkout-payment-info__step">
                       <span className="checkout-payment-info__num">2</span>
-                      <span>Scan our QR code in the form and pay ₹{grandTotal}</span>
+                      <span>Scan the QR code with any UPI app and pay ₹{grandTotal}</span>
                     </div>
                     <div className="checkout-payment-info__step">
                       <span className="checkout-payment-info__num">3</span>
-                      <span>Enter your name & phone number and submit the form</span>
+                      <span>Upload your payment screenshot and confirm</span>
                     </div>
                   </div>
 
